@@ -1,0 +1,9 @@
+\ Model Routing Optimization_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ Supply_Constraint_A: flow_allocation[A,A] + flow_allocation[B,A]
+   + flow_allocation[C,A] <= -100
+Bounds
+End
